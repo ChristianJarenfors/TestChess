@@ -69,6 +69,17 @@ namespace TDD_examples_1
         Black,
         White
     }
-
+    public class NotAllowedMoveException : Exception
+    {
+        public NotAllowedMoveException(string message) : base(message) { }
+    }
+    public class MoveToFriendlyOccupiedSpaceException : Exception
+    {
+        public MoveToFriendlyOccupiedSpaceException(string message) : base(message) { }
+    }
+    public class PieceNotMovingException : Exception
+    {
+        public PieceNotMovingException(string message) : base(message) { }
+    }
     //public class Chess : IChessGame
 }
